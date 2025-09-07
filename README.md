@@ -4,7 +4,10 @@
 
 BrandForge AI is an all-in-one, AI-powered marketing toolkit designed for small businesses, entrepreneurs, and creators. It streamlines your entire marketing workflow, from initial market research and strategy to creating a full brand identity, generating content, and designing visuals—all from a single, intuitive interface. Powered by Google's Gemini models, BrandForge AI helps you create professional, high-impact marketing materials without the need for a large team or budget.
 
-![BrandForge AI Screenshot](./brandforge-ai-screenshot.png)
+<img width="1919" height="991" alt="image" src="https://github.com/user-attachments/assets/ff1a57b0-ce40-40bc-b10b-1eee9afb42af" />
+
+<img width="1919" height="997" alt="image" src="https://github.com/user-attachments/assets/9f43e6bd-01b7-473b-a0fc-43f77b7d5be3" />
+
 
 ---
 
