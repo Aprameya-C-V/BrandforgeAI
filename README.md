@@ -4,6 +4,8 @@
 
 BrandForge AI is an all-in-one, AI-powered marketing toolkit designed for small businesses, entrepreneurs, and creators. It streamlines your entire marketing workflow, from initial market research and strategy to creating a full brand identity, generating content, and designing visuals—all from a single, intuitive interface. Powered by Google's Gemini models, BrandForge AI helps you create professional, high-impact marketing materials without the need for a large team or budget.
 
+![BrandForge AI Screenshot](./brandforge-ai-screenshot.png)
+
 ---
 
 ## Core Features
@@ -62,3 +64,42 @@ Built with **Google AI Studio**.
 Powered by **Gemini**.
 
 ---
+
+## Comprehensive Test Case for All Tools
+
+Here is one cohesive test case designed to validate the functionality of every tool in the application.
+
+**Fictional Business:** **"Terra Weave"** - A new e-commerce brand selling artisanal, handwoven bags and home decor. The brand is focused on sustainability, using recycled materials, and celebrating ethical craftsmanship.
+
+### 1. Test: Strategy Planner
+*   **Business Goals:** `Launch the Terra Weave brand and achieve 100 sales in the first quarter. Build a community around sustainable and ethical craftsmanship.`
+*   **Target Audience:** `Environmentally conscious consumers, aged 25-45, who appreciate unique, handcrafted goods and ethical fashion. They are active on Instagram and Pinterest.`
+*   **Approximate Budget:** `$1,000/month for digital advertising and content creation.`
+*   **Expected Outcome:** A detailed markdown strategy document with sections for audience, messaging, channels, and KPIs.
+
+### 2. Test: Market Research
+*   **Topic:** `market for sustainable, direct-to-consumer handcrafted bags`
+*   **Expected Outcome:** A market analysis report with a summary and a list of clickable web sources.
+
+### 3. Test: Brand Identity Builder
+*   **Business Description:** `Terra Weave is a new e-commerce brand selling artisanal, handwoven bags and home decor. The brand is focused on sustainability, using recycled materials, and celebrating ethical craftsmanship. The vibe should be earthy, authentic, warm, and modern.`
+*   **Expected Outcome:** A generated logo image, a color palette (with earthy tones), and typography suggestions. Note the "logo description" it creates for the next step.
+
+### 4. Test: Logo Generator
+*   **Prompt:** `A minimalist logo featuring an abstract symbol that combines a woven texture and a leaf. Use earthy tones like terracotta, sage green, and sand. The style should be clean, modern, and slightly rustic.` (This is an example of what the Brand Identity tool might generate).
+*   **Expected Outcome:** A downloadable PNG logo that matches the description.
+
+### 5. Test: Content Engine
+*   **Primary Topic:** `sustainable textiles and artisanal weaving techniques`
+*   **Target Audience:** `eco-conscious consumers interested in ethical fashion`
+*   **Expected Outcome:** A list of 5 content ideas (e.g., blog posts, videos) with titles, descriptions, and keywords.
+
+### 6. Test: Social Post Generator
+*   **Post Topic:** `the launch of our new collection of handwoven tote bags made from recycled ocean plastic`
+*   **Desired Tone:** `Warm, authentic, and inspiring`
+*   **Expected Outcome:** Three distinct social media posts for different platforms with copy and visual suggestions.
+
+### 7. Test: Visual Studio
+*   **Image Upload:** Upload a simple photo of a plain tote bag on a white background.
+*   **Edit Description:** `Place this bag on a rustic wooden table, with a small potted succulent and a cup of coffee next to it. The lighting should be soft and natural, like early morning light.`
+*   **Expected Outcome:** A new, downloadable image showing the bag in the described scene.
