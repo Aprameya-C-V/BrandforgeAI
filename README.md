@@ -4,9 +4,11 @@
 
 BrandForge AI is an all-in-one, AI-powered marketing toolkit designed for small businesses, entrepreneurs, and creators. It streamlines your entire marketing workflow, from initial market research and strategy to creating a full brand identity, generating content, and designing visuals—all from a single, intuitive interface. Powered by Google's Gemini models, BrandForge AI helps you create professional, high-impact marketing materials without the need for a large team or budget.
 
-<img width="1919" height="991" alt="image" src="https://github.com/user-attachments/assets/ff1a57b0-ce40-40bc-b10b-1eee9afb42af" />
+<img width="1919" height="830" alt="image" src="https://github.com/user-attachments/assets/b6705a6b-2088-4e95-9c6b-dc6b8c17d96b" />
 
-<img width="1919" height="997" alt="image" src="https://github.com/user-attachments/assets/9f43e6bd-01b7-473b-a0fc-43f77b7d5be3" />
+
+<img width="1919" height="987" alt="image" src="https://github.com/user-attachments/assets/f5506a3d-2c5b-4359-b532-9bfa4f99e060" />
+
 
 
 ---
@@ -52,6 +54,72 @@ BrandForge AI offers a suite of seven powerful tools, ordered to guide you throu
 
 ---
 
+
+## Setup and Installation
+
+Follow these instructions to set up and run the project on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/) (v18 or newer recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### 1. Clone the Repository
+
+First, clone the project repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/brandforge-ai.git
+cd brandforge-ai
+```
+*(Replace `your-username/brandforge-ai.git` with the actual repository URL)*
+
+### 2. Set Up Environment Variables
+
+The application requires a Google Gemini API key to function. You can get one from [Google AI Studio](https://aistudio.google.com/app/apikey).
+
+1.  In the root of the project directory, create a new file named `.env`.
+2.  Add your API key to this file as follows:
+
+    ```
+    API_KEY=YOUR_GEMINI_API_KEY
+    ```
+
+    *Replace `YOUR_GEMINI_API_KEY` with your actual key. This file is ignored by git to keep your key private.*
+
+### 3. Install Dependencies & Run
+
+For a robust local development experience that includes hot-reloading and proper environment variable handling, we recommend using [Vite](https://vitejs.dev/).
+
+1.  **Initialize a `package.json` file:**
+    ```bash
+    npm init -y
+    ```
+2.  **Install Vite and the React plugin:**
+    ```bash
+    npm install vite @vitejs/plugin-react
+    ```
+3.  **Create a Vite configuration file:** Create a new file named `vite.config.js` in the project root and add the following content. This tells Vite how to handle environment variables.
+    ```javascript
+    import { defineConfig } from 'vite'
+    import react from '@vitejs/plugin-react'
+
+    // https://vitejs.dev/config/
+    export default defineConfig({
+      plugins: [react()],
+      define: {
+        'process.env': process.env
+      }
+    })
+    ```
+4.  **Run the development server:**
+    ```bash
+    npx vite
+    ```
+    Your application will now be running on `http://localhost:5173` (or another port if 5173 is busy), with your API key correctly loaded from the `.env` file. Any changes you make to the code will be reflected instantly in the browser.
+
+---
+
 ## Technology Stack
 
 -   **Frontend:** React, TypeScript, Tailwind CSS
@@ -59,50 +127,3 @@ BrandForge AI offers a suite of seven powerful tools, ordered to guide you throu
 -   **Icons:** React Icons
 
 ---
-
-## Attribution
-
-Conceptualization by **Aprameya**.  
-Built with **Google AI Studio**.  
-Powered by **Gemini**.
-
----
-
-## Comprehensive Test Case for All Tools
-
-Here is one cohesive test case designed to validate the functionality of every tool in the application.
-
-**Fictional Business:** **"Terra Weave"** - A new e-commerce brand selling artisanal, handwoven bags and home decor. The brand is focused on sustainability, using recycled materials, and celebrating ethical craftsmanship.
-
-### 1. Test: Strategy Planner
-*   **Business Goals:** `Launch the Terra Weave brand and achieve 100 sales in the first quarter. Build a community around sustainable and ethical craftsmanship.`
-*   **Target Audience:** `Environmentally conscious consumers, aged 25-45, who appreciate unique, handcrafted goods and ethical fashion. They are active on Instagram and Pinterest.`
-*   **Approximate Budget:** `$1,000/month for digital advertising and content creation.`
-*   **Expected Outcome:** A detailed markdown strategy document with sections for audience, messaging, channels, and KPIs.
-
-### 2. Test: Market Research
-*   **Topic:** `market for sustainable, direct-to-consumer handcrafted bags`
-*   **Expected Outcome:** A market analysis report with a summary and a list of clickable web sources.
-
-### 3. Test: Brand Identity Builder
-*   **Business Description:** `Terra Weave is a new e-commerce brand selling artisanal, handwoven bags and home decor. The brand is focused on sustainability, using recycled materials, and celebrating ethical craftsmanship. The vibe should be earthy, authentic, warm, and modern.`
-*   **Expected Outcome:** A generated logo image, a color palette (with earthy tones), and typography suggestions. Note the "logo description" it creates for the next step.
-
-### 4. Test: Logo Generator
-*   **Prompt:** `A minimalist logo featuring an abstract symbol that combines a woven texture and a leaf. Use earthy tones like terracotta, sage green, and sand. The style should be clean, modern, and slightly rustic.` (This is an example of what the Brand Identity tool might generate).
-*   **Expected Outcome:** A downloadable PNG logo that matches the description.
-
-### 5. Test: Content Engine
-*   **Primary Topic:** `sustainable textiles and artisanal weaving techniques`
-*   **Target Audience:** `eco-conscious consumers interested in ethical fashion`
-*   **Expected Outcome:** A list of 5 content ideas (e.g., blog posts, videos) with titles, descriptions, and keywords.
-
-### 6. Test: Social Post Generator
-*   **Post Topic:** `the launch of our new collection of handwoven tote bags made from recycled ocean plastic`
-*   **Desired Tone:** `Warm, authentic, and inspiring`
-*   **Expected Outcome:** Three distinct social media posts for different platforms with copy and visual suggestions.
-
-### 7. Test: Visual Studio
-*   **Image Upload:** Upload a simple photo of a plain tote bag on a white background.
-*   **Edit Description:** `Place this bag on a rustic wooden table, with a small potted succulent and a cup of coffee next to it. The lighting should be soft and natural, like early morning light.`
-*   **Expected Outcome:** A new, downloadable image showing the bag in the described scene.
